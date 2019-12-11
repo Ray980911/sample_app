@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
+<<<<<<< HEAD
 
   test "should get root" do
     get root_url
@@ -18,9 +19,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+<<<<<<< HEAD
   test "should get about" do
     get static_pages_about_url
     assert_response :success
   end
 
+=======
+>>>>>>> c6bc10aae9e155b0f47ebd37b08c8cf1bf459dae
 end
