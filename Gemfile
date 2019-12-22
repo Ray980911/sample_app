@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails-controller-testing'
+gem "rack", ">= 2.0.8"
 
 gem 'puma', '~> 3.11'
 
