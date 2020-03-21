@@ -5,11 +5,17 @@ class SessionsController < ApplicationController
   end
 
   def create
+    # メアド認証
     user = User.find_by(email: params[:session][:email].downcase)
+    # パスワード認証
     if user && user.authenticate(params[:session][:password])
+      # 有効化アカウントか認証
       if user.activated?
+        # DBからログインするユーザーのuser_idを渡す（ログイン状態になる）
         log_in user
+        # ユーザーのログイン情報を保持するかどうかの構文
         params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+        # user = "/users/#{@user.id}"の省略
         redirect_back_or user
       else
         message  = "Account not activated. "
