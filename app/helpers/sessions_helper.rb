@@ -1,6 +1,7 @@
 module SessionsHelper
   # ログインするメソッド
   def log_in(user)
+    # ログインするユーザーにuser_idを付与するとログインしたことになる（sessionメソッド）
     session[:user_id] = user.id
   end
 
