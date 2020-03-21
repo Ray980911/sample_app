@@ -16,7 +16,7 @@ gem 'jquery-ui-rails'
 gem 'rails-controller-testing'
 gem "rack", ">= 2.0.8"
 
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
