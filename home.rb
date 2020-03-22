@@ -4,3 +4,5 @@ puts "new branch"
 puts "feature"
 puts "conflict develop"
 puts "conflict feature"
+
+puts "git stash"
